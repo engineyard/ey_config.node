@@ -4,7 +4,7 @@
 Add package "ey_config" to your EY Cloud Node.js application's package.json dependencies. For example:
 
     "dependencies": {
-      "ey_config": ""
+      "ey_config": ">= 0"
     }
 
 Manually:
