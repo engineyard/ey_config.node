@@ -29,6 +29,18 @@ Manually:
 
 ## Usage
 
+
+## Development
+
+
+## Tests
+
+    npm test
+
+To run specific tests us vows:
+
+    vows test/ey_config_test.js
+
 ## Release
 
 Add yourself as an npm package author:
@@ -50,3 +62,4 @@ Release the latest package:
 
     git tag vX.Y.Z
     npm publish
+
