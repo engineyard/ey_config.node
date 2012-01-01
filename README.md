@@ -31,7 +31,8 @@ Manually:
 
     var eyConfig = require('ey_config');
     var EYConfig = new eyConfig.Config();
-    EYConfig.get('mongodb', 'MONGOHQ_URL')
+    EYConfig.get('mongodb', 'MONGOHQ_URL');
+    EYConfig.get('mongodb').MONGOHQ_URL;
 
 ## Development
 
