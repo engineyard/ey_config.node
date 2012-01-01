@@ -9,16 +9,8 @@
     "url": "git://github.com/engineyard/ey_config.node.git"
   },
   "main": "./lib/ey_config.js",
-  "engines": {
-    "node": "=0.6.X"
-  },
-  "dependencies": {
-    "libyaml": ">= 0.0.4"
-  },
-  "devDependencies": {
-    "vows": "0.6.X"
-  },
-  "scripts": {
-    "test": "vows --spec --isolate"
-  }
+  "engines": { "node": "=0.6.X" },
+  "dependencies": { "libyaml": ">= 0.0.4" },
+  "devDependencies": { "vows": "0.6.X" },
+  "scripts": { "test": "vows --spec --isolate" }
 }
