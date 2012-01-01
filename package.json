@@ -3,12 +3,12 @@
   "name": "ey_config",
   "description": "Access to additional services for Engine Yard customers.",
   "version": "0.1.0",
-  "homepage": "https://github.com/engineyard/ey_config_nodejs",
+  "homepage": "https://github.com/engineyard/ey_config.node",
   "repository": {
     "type": "git",
-    "url": "git://github.com/engineyard/ey_config_nodejs.git"
+    "url": "git://github.com/engineyard/ey_config.node.git"
   },
-  "main": "ey_config.js",
+  "main": "./lib/ey_config.js",
   "engines": {
     "node": "=0.6.X"
   },

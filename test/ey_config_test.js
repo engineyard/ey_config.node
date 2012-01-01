@@ -1,7 +1,7 @@
 var vows = require('vows'),
     assert = require('assert');
 
-var eyConfig = require('ey_config');
+var eyConfig = require('../lib/ey_config');
 
 vows.describe('EY Confg').addBatch({
   'for mongodb': {
