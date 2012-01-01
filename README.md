@@ -1,4 +1,18 @@
 
+## Dependencies
+
+Currently, the services configuration is in YAML format, so libyaml must be installed.
+
+On OS/X with Homebrew:
+
+    brew install libyaml
+
+On EY Cloud Gentoo:
+
+    sudo emerge libyaml
+
+NOTE: either we should generate a JSON formatted config file or pre-install libyaml ebuild.
+
 ## Installation
 
 Add package "ey_config" to your EY Cloud Node.js application's package.json dependencies. For example:
