@@ -1,7 +1,7 @@
 var yaml = require('libyaml');
 
 exports.Config = function(config_path) {
-  this.config = yaml.load(config_path);
+  this.config = yaml.loadFileSync(config_path)[0];
 };
 
 // Usage:
