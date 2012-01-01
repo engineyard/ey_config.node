@@ -1,12 +1,7 @@
-exports.Config = function () {
-
+exports.Config = function(config_path) {
 };
 
-exports.Config.prototype = {
-};
-
-exports.Config = function () {
-  this.mongodb = {
-    MONGOHQ_URL: 'hithere'
-  }
+// new Config().get('mongodb').MONGODB_URL
+exports.Config.prototype.get = function(key) {
+  return { MONGODB_URL: 'hitherenow'};
 };

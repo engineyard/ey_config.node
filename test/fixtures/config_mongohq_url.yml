@@ -1,3 +1,0 @@
---- 
-mongohq: 
-  MONGOHQ_URL: mongodb://engineyard:PASSWORD@staff.mongohq.com:10076/environmentname
