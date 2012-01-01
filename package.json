@@ -10,7 +10,7 @@
   },
   "main": "ey_config.js",
   "engines": {
-    "node": "0.6.1"
+    "node": "=0.6.X"
   },
   "dependencies": {
     "libyaml": ">= 0.0.4"
@@ -19,6 +19,6 @@
     "vows": "0.6.X"
   },
   "scripts": {
-    "test": "vows test/*_test.js"
+    "test": "vows ./test/*_test.js"
   }
 }
