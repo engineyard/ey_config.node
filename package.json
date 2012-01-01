@@ -19,6 +19,6 @@
     "vows": "0.6.X"
   },
   "scripts": {
-    "test": "vows ./test/*_test.js"
+    "test": "vows --spec --isolate"
   }
 }
