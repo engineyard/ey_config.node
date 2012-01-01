@@ -1,3 +1,6 @@
+# Engine Yard services configuration ![https://secure.travis-ci.org/engineyard/ey_config.node](https://secure.travis-ci.org/engineyard/ey_config.node.png?branch=master)
+
+
 
 ## Dependencies
 
