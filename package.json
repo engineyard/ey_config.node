@@ -1,12 +1,12 @@
 {
-  "author": "Dr Nic Williams <drnicwilliams@gmai.com>",
+  "author": "Dr Nic Williams <drnicwilliams@gmail.com>",
   "name": "ey_config",
   "description": "Access to additional services for Engine Yard customers.",
   "version": "0.1.0",
-  "homepage": "https://github.com/engineyard/ey_config/\b",
+  "homepage": "https://github.com/engineyard/ey_config_nodejs",
   "repository": {
     "type": "git",
-    "url": "git://github.com/engineyard/ey_config/\b.git"
+    "url": "git://github.com/engineyard/ey_config_nodejs.git"
   },
   "main": "ey_config.js",
   "engines": {
