@@ -1,3 +1,0 @@
---- 
-mongodb: 
-  MONGODB_URL: mongodb://engineyard:PASSWORD@staff.mongodb.com:10076/environmentname

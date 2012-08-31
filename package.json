@@ -1,16 +1,23 @@
 {
-  "author": "Dr Nic Williams <drnicwilliams@gmail.com>",
+  "author": "Engine Yard (http://www.engineyard.com)",
+  "contributors": [
+   "Dr Nic Williams <drnicwilliams@gmail.com>",
+   "Ryan Souza <rsouza@engineyard.com>"
+  ],
+
   "name": "ey_config",
+  "keywords": "engineyard ey",
   "description": "Access to additional services for Engine Yard customers.",
-  "version": "0.1.0",
+  "version": "1.0.0pre",
+
   "homepage": "https://github.com/engineyard/ey_config.node",
   "repository": {
     "type": "git",
     "url": "git://github.com/engineyard/ey_config.node.git"
   },
+
   "main": "./lib/ey_config.js",
-  "engines": { "node": "=0.6.X" },
-  "dependencies": { "libyaml": ">= 0.0.4" },
-  "devDependencies": { "vows": "0.6.X" },
-  "scripts": { "test": "vows --spec --isolate" }
+
+  "devDependencies": { "mocha": "1.X", "coffee-script": "1.X" },
+  "scripts": { "test": "mocha --compilers coffee:coffee-script -R spec" }
 }

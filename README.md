@@ -1,52 +1,33 @@
 # Engine Yard services configuration ![https://secure.travis-ci.org/engineyard/ey_config.node](https://secure.travis-ci.org/engineyard/ey_config.node.png?branch=master)
 
 
-
-## Dependencies
-
-Currently, the services configuration is in YAML format, so libyaml must be installed.
-
-On OS/X with Homebrew:
-
-    brew install libyaml
-
-On EY Cloud Gentoo:
-
-    sudo emerge libyaml
-
-NOTE: either we should generate a JSON formatted config file or pre-install libyaml ebuild.
-
 ## Installation
 
 Add package "ey_config" to your EY Cloud Node.js application's package.json dependencies. For example:
 
     "dependencies": {
-      "ey_config": ">= 0"
+      "ey_config": "~1.0"
     }
 
 Manually:
 
     npm install ey_config
-    
-    
 
 ## Usage
 
-    var eyConfig = require('ey_config');
-    var EYConfig = new eyConfig.Config();
+    var EYConfig = require('ey_config');
     EYConfig.get('mongodb', 'MONGOHQ_URL');
     EYConfig.get('mongodb').MONGOHQ_URL;
 
-## Development
+    Or
+
+    require('ey_config').get('mongodb')
 
 
 ## Tests
 
     npm test
 
-To run specific tests us vows:
-
-    vows test/ey_config_test.js
 
 ## Release
 
