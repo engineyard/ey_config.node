@@ -19,5 +19,5 @@
   "main": "./lib/ey_config.js",
 
   "devDependencies": { "mocha": "1.X", "coffee-script": "1.X" },
-  "scripts": { "test": "mocha --compilers coffee:coffee-script -R spec" }
+  "scripts": { "test": "mocha --compilers coffee:coffee-script" }
 }
