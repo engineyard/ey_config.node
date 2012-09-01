@@ -1,5 +1,4 @@
-# Engine Yard services configuration ![https://secure.travis-ci.org/engineyard/ey_config.node](https://secure.travis-ci.org/engineyard/ey_config.node.png?branch=master)
-
+# Engine Yard services configuration [![Build Status](https://secure.travis-ci.org/engineyard/ey_config.node.png)](https://secure.travis-ci.org/engineyard/ey_config.node)
 
 ## Installation
 
