@@ -13,9 +13,8 @@ describe "EY Config", ->
       ey_config.config_path = "test/fixtures/ey_services_config_deploy.json"
 
     it "returns an object when given a key", ->
-      value = ey_config.get("mongodb")
-      assert.equal typeof value, "object"
-      assert.equal value.MONGODB_URL, "mongodb://engineyard:PASSWORD@staff.mongodb.com:10076/environmentname"
+      assert.equal typeof ey_config.get("mongodb"), "object"
+      assert.equal ey_config.get("mongodb").MONGODB_URL, "mongodb://engineyard:PASSWORD@staff.mongodb.com:10076/environmentname"
 
     it "accepts the environment variable to get as a second argument", ->
       assert.equal ey_config.get("mongodb", "MONGODB_URL"), "mongodb://engineyard:PASSWORD@staff.mongodb.com:10076/environmentname"
@@ -24,25 +23,36 @@ describe "EY Config", ->
       assert.equal ey_config.get("mongodb", "INVALID_VARIABLE"), null
 
     it "throws when the key does not exist", ->
-      assert.throws ->
+      assert.throws (->
         ey_config.get "invalid_key"
+      ), /Unknown key/
 
 
     it "throws when no key is given", ->
-      assert.throws ->
+      assert.throws (->
         ey_config.get()
+      ), /Missing argument/
 
 
 
   describe "with a missing config file", ->
     beforeEach ->
       ey_config.config_path = "test/fixtures/does_not_exist.json"
-      ey_config.config = null
 
     it "should throw an exception when attempting to get a variable", ->
       assert.throws (->
         ey_config.get "mongodb", "MONGODB_URL"
       ), /ENOENT/
+
+
+  describe "with an empty config path", ->
+    beforeEach ->
+      ey_config.config_path = null
+
+    it "resets it to the default config path", ->
+      assert.throws (->
+        ey_config.get "mongodb", "MONGODB_URL"
+      ), /ey_services_config_deploy/
 
 
   describe "backwards compatible api", ->
@@ -63,6 +73,3 @@ describe "EY Config", ->
       EYConfig = new (new (new (new ey_config.Config).Config).Config).Config
       assert.equal EYConfig.get("mongodb", "MONGODB_URL"), "mongodb://engineyard:PASSWORD@staff.mongodb.com:10076/environmentname"
       assert.equal EYConfig.get("mongodb").MONGODB_URL, "mongodb://engineyard:PASSWORD@staff.mongodb.com:10076/environmentname"
-
-
-

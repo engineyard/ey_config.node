@@ -9,20 +9,11 @@ Add package "ey_config" to your EY Cloud Node.js application's package.json depe
       "ey_config": "~1.0"
     }
 
-Manually:
-
-    npm install ey_config
-
 ## Usage
 
     var EYConfig = require('ey_config');
     EYConfig.get('mongodb', 'MONGOHQ_URL');
     EYConfig.get('mongodb').MONGOHQ_URL;
-
-    Or
-
-    require('ey_config').get('mongodb')
-
 
 ## Tests
 
