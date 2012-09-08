@@ -8,7 +8,7 @@
   "name": "ey_config",
   "keywords": "engineyard ey",
   "description": "Access to additional services for Engine Yard customers.",
-  "version": "1.0.0pre",
+  "version": "1.0.0",
 
   "homepage": "https://github.com/engineyard/ey_config.node",
   "repository": {
