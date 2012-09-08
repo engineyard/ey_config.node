@@ -6,7 +6,7 @@
   ],
 
   "name": "ey_config",
-  "keywords": "engineyard ey",
+  "keywords": ["engineyard", "ey"],
   "description": "Access to additional services for Engine Yard customers.",
   "version": "1.0.0",
 
